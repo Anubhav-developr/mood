@@ -11,9 +11,12 @@
     flex-direction: column;
     flex-wrap: wrap-reverse;
     padding-bottom: 2em;
-    font: size 2em;
+
   
    
+}
+#moodhead{
+    font-size: 34px;
 }
 .list{
    
