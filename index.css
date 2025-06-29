@@ -1,23 +1,21 @@
-.stuc{
+*{
+    /* background-color: rgb(162, 238, 238); */
+}
+
+.stuc {
     display: flex;
     justify-content: center;
-    font-size: larger;
-    margin:0 auto;
-   
-
-}
-.stuc{
-    display: flex;
     flex-direction: column;
     flex-wrap: wrap-reverse;
-    padding-bottom: 2em;
-
-  
-   
+    font-size: larger;
+    margin: 0 auto;
+    padding-bottom: 2em;  
 }
+
 #moodhead{
     font-size: 34px;
 }
+
 .list{
    
     justify-content: center;
@@ -27,6 +25,7 @@
     background-color: rgb(207, 196, 183);
     border: 1px solid black;
 }
+
 .stuc2{
     display: flex;
     flex-direction: column;
@@ -38,10 +37,7 @@
     background-color: rgb(162, 238, 238);
     align-items: center;
 }
-*{
-   
-    /* background-color: rgb(162, 238, 238); */
-}
+
 .imgs{
     display: flex;
     padding: 2em;
@@ -49,9 +45,11 @@
     flex-direction: column;
     align-items: center;
 }
+
 .imgs img{
     border-radius: 50%;
 }
+
 .inner {
 position: relative;
       z-index: 1;
@@ -59,22 +57,28 @@ position: relative;
       /* margin-top: 20%; */
       color: rgb(18, 12, 12);
       font-size: 2em;
-     
 } 
-.para {
-background-image: url('./imgs/carsm.jpeg');
-background-repeat: no-repeat;
-background-size: cover;
-background-position: center;
-/* position: fixed; */
-      /* top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%; */
-      /* opacity: 0.4!important; */
-      z-index: -1;
 
+.para {
+  position: relative;
+  z-index: 1;
 }
+
+.para::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('./imgs/carsm.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.25; /* Adjust your opacity here */
+  z-index: -1;
+}
+
 .flexitem {
     margin: 0 auto;
     text-align: center;
@@ -83,6 +87,6 @@ background-position: center;
     padding: 3em;
     font-size: 23px;
     text-shadow: aqua;
-    color: gold;/
+    color: gold; /* I recommend using a darker font */
     font-weight: 400;
 }
